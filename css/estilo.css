@@ -1,0 +1,299 @@
+/*Body*/
+body{
+		/*para colocar una imagen de fondo*/
+	background-image: url("../imagenes/amarillo.jpg");
+	/*para que no se repita la imagen de fondo*/
+	background-repeat: no-repeat;
+	/*para ajustar el tamaño de la imagen*/
+	background-size: 100% 100%;
+	/*font-family es para el tipo de letra: si el 1ro no lo encuentra en el navegador, coloca el segundo, sino el tercero*/
+	font-family: "Lucida Console", "Courier New", monospace;
+	/*tamaño de letra*/
+	font-size:40px;
+	/*color de letra*/
+	color:#2E6EB1;
+	
+}
+hr{
+	/*border es para la linea , tamaño en pixeles, tipo de linea y color*/
+	border: 5px solid #2E6EB1;
+	/*es para el terminado de las orillas
+	el radio que tendra se expresa en pixeles*/
+	border-radius: 5px;
+}
+p{
+	/*para alinear el texto*/
+	text-align: center;
+	font-size:20px;
+	color: black;
+	font-family:kitty;
+}
+table,tr,td{
+	/*grosor y tipo de linea*/
+	border:3px solid;
+	/*color del borde*/
+	border-color: black;
+	/*alineacion del texto*/
+	text-align: center;
+	/*color del fondo*/
+	background-color:#FCEB88;
+}
+th{
+	background-color:#F9D027;
+}
+ul{
+	/*tipo de viñeta*/
+	list-style-type:circle;
+	list-style-position:inside;
+	font-family: kitty;
+	font-size: 20px;
+}
+
+ol{
+	/*algunos de los valores de lis-style-type son: 
+	lower-alpha; lower-roman; upper-alphan; upper roman;
+	a,b,c,d,e,f  i,ii,iii,iv  A,B,C,D,E,F  I,II,III,IV*/
+	list-style-type: upper-roman;
+	list-style-position: inside;
+	font-family: kitty;
+	font-size: 20px;
+}
+
+.pie{
+	text-align: center;
+	font-size:15px;
+	color:black;
+	font-family: puppy;
+	font-weight: bold;
+}
+
+.tabla{
+	text-align:center;
+	font-size:15px;
+	font-family:kitty;
+	color:black;
+}
+
+.texto{
+	
+	font-family:valentine;
+	font-size:50px;
+	color:#2E6EB1;
+	font-weight:bold;
+	text-align:center;
+}
+
+.subtitulo{
+	text-align: center;
+	font-size:40px;
+	color:#2E6EB1;
+	font-family:coffe ;
+	font-weight:bold;
+}
+
+
+.marquesina{
+	width:200px;
+	height:200px;
+}
+
+.botones{
+	border-radius:50%;
+	width:100px;
+	height:100px;
+}
+
+.itabla{
+	width:150px;
+	height:200px;
+}
+
+.iotras{
+	width: 600px;
+	height: 400px; 
+	padding: 5px; 
+	border: 5px solid #4383E7;
+	
+}
+
+@font-face{
+	font-family: valentine;
+	src:url("../fuentes/Be My Valentine.otf");
+}
+
+@font-face{
+	font-family:puppy;
+	src:url("../fuentes/puppy.otf");
+}
+
+@font-face{
+	font-family:coffe;
+	src:url("../fuentes/CoffeeCreamNftsOpensea-Regular.ttf");
+}
+
+@font-face{
+	font-family:kitty;
+	src:url("../fuentes/Sweet Kitty.otf");
+}
+
+/*uso de divs*/
+/*div o caja para el encabezado*/
+*{
+	margin:0px;
+	padding:0px;
+}
+
+div#top{
+	width:100%;
+	height:90px;
+	background-image:linear-gradient(#FCD655,#FCDF7B);
+	
+}
+
+div#principal{
+	margin:auto;
+	margin-top:10px;
+	width:900px;
+	height:670px;
+	background-image:radial-gradient(#6FC6F5,#BCE1F4);
+}
+
+div#piep{
+	margin-top:10px;
+	width:100%;
+	height:80px;
+	background-image:url("../imagenes/amarillo.jpg");
+}
+.caja{
+	height:105px;
+	width:105px;
+	background:#FCEB88;
+	border:10px solid #FCEB88 ;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	border-radius:50%;
+}
+
+.caja:hover{
+	box-shadow:0 0 10px blue;
+	transform:scale(1.3);
+
+}
+
+.ca{
+	height:300px;
+	width:200px;
+	background:#FCEB88;
+	border:10px solid #FCEB88 ;
+	margin:5px;
+	color:black;
+	text-align:center;
+	display:inline-block;
+	
+}
+
+.ca:hover{
+	box-shadow:0 0 10px blue;
+	transform:scale(1.3);
+
+}
+
+.caja-texto{
+	padding-top:2px;
+	font-size:10px;
+	color:black;
+	font-weight:bold;
+	
+}
+
+.texto-adicional{
+	padding-top:5px;
+	font-size:15px;
+}
+
+.carrousel{
+	width:400px;
+	margin:auto;
+	box-sizing:border-box;
+}
+.conteCarrousel{
+	width:100%;
+	height:400px;
+	overflow:hidden;
+	box-sizing:border-box;
+}
+
+.itemCarrousel{
+	position:relative;
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemCarrouselTarjeta{
+	width:100%;
+	height:100%;
+	box-sizing:border-box;
+}
+
+.itemCarrouselArrows{
+	position:absolute;
+	top:0;
+	bottom:0;
+	left:0;
+	right:0;
+	height:100%;
+	width:100%;
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding:20px;
+	box-sizing:border-box;
+}
+
+.itemCarrouselArrows>i :hover{
+	cursor:pointer;
+}
+
+.conterCarrouselController{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+
+.conterCarrouselController >a{
+	text-decoration:none;
+	font-size:32px;
+	color:grey;
+}
+
+.itemCarrouselArrows >a >i{
+	color:white;
+	
+}
+.descripcion{
+	font-family:kitty;
+	font-size:30px;
+	color:black;
+	text-align:center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
